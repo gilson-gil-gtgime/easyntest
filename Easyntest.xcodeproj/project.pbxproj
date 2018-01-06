@@ -14,6 +14,13 @@
 		2B26BCCA20004E2E00B9A640 /* Simulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B26BCC720004E2E00B9A640 /* Simulation.swift */; };
 		2B26BCCB20004E2E00B9A640 /* InvestmentParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B26BCC820004E2E00B9A640 /* InvestmentParameter.swift */; };
 		2B26BCCC20004E2E00B9A640 /* SimulationParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B26BCC920004E2E00B9A640 /* SimulationParameters.swift */; };
+		2B26BCCF200056E400B9A640 /* ServiceAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B26BCCE200056E400B9A640 /* ServiceAPI.swift */; };
+		2B26BCD22000574D00B9A640 /* CompletionHandlerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B26BCD12000574D00B9A640 /* CompletionHandlerType.swift */; };
+		2B26BCD4200058CA00B9A640 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B26BCD3200058CA00B9A640 /* NetworkError.swift */; };
+		2B26BCD62000590A00B9A640 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B26BCD52000590A00B9A640 /* Endpoints.swift */; };
+		2B26BCD8200059A900B9A640 /* StatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B26BCD7200059A900B9A640 /* StatusCode.swift */; };
+		2B26BCDA20005E1600B9A640 /* SimulateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B26BCD920005E1600B9A640 /* SimulateService.swift */; };
+		2B26BCDC20005E3500B9A640 /* ServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B26BCDB20005E3500B9A640 /* ServiceProtocol.swift */; };
 		71C829E12681272A52BF7126 /* Pods_Easyntest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89766FA4FAC8AFEE4EDD0ABD /* Pods_Easyntest.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +46,13 @@
 		2B26BCC720004E2E00B9A640 /* Simulation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Simulation.swift; path = Easyntest/Models/Simulation.swift; sourceTree = SOURCE_ROOT; };
 		2B26BCC820004E2E00B9A640 /* InvestmentParameter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InvestmentParameter.swift; path = Easyntest/Models/InvestmentParameter.swift; sourceTree = SOURCE_ROOT; };
 		2B26BCC920004E2E00B9A640 /* SimulationParameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SimulationParameters.swift; path = Easyntest/Models/SimulationParameters.swift; sourceTree = SOURCE_ROOT; };
+		2B26BCCE200056E400B9A640 /* ServiceAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceAPI.swift; sourceTree = "<group>"; };
+		2B26BCD12000574D00B9A640 /* CompletionHandlerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletionHandlerType.swift; sourceTree = "<group>"; };
+		2B26BCD3200058CA00B9A640 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		2B26BCD52000590A00B9A640 /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
+		2B26BCD7200059A900B9A640 /* StatusCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusCode.swift; sourceTree = "<group>"; };
+		2B26BCD920005E1600B9A640 /* SimulateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulateService.swift; sourceTree = "<group>"; };
+		2B26BCDB20005E3500B9A640 /* ServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProtocol.swift; sourceTree = "<group>"; };
 		6E871EE9BFADB262BA4E43D6 /* Pods-Easyntest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Easyntest.release.xcconfig"; path = "Pods/Target Support Files/Pods-Easyntest/Pods-Easyntest.release.xcconfig"; sourceTree = "<group>"; };
 		89766FA4FAC8AFEE4EDD0ABD /* Pods_Easyntest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Easyntest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		98F00E4C8F18F302E2702C73 /* Pods-Easyntest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Easyntest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Easyntest/Pods-Easyntest.debug.xcconfig"; sourceTree = "<group>"; };
@@ -96,6 +110,8 @@
 			children = (
 				2B26BCB320003D6400B9A640 /* Application */,
 				2B26BCC620004E1D00B9A640 /* Models */,
+				2B26BCCD2000556800B9A640 /* Services */,
+				2B26BCD02000573D00B9A640 /* Helpers */,
 				2B26BCB420003D7B00B9A640 /* Resources */,
 				2B26BCC32000486700B9A640 /* SwiftLint */,
 			);
@@ -115,6 +131,8 @@
 			isa = PBXGroup;
 			children = (
 				2B26BC9320003D4600B9A640 /* AppDelegate.swift */,
+				2B26BCD52000590A00B9A640 /* Endpoints.swift */,
+				2B26BCD7200059A900B9A640 /* StatusCode.swift */,
 				2B26BC9F20003D4600B9A640 /* Info.plist */,
 			);
 			path = Application;
@@ -144,6 +162,25 @@
 				2B26BCC920004E2E00B9A640 /* SimulationParameters.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		2B26BCCD2000556800B9A640 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2B26BCCE200056E400B9A640 /* ServiceAPI.swift */,
+				2B26BCD3200058CA00B9A640 /* NetworkError.swift */,
+				2B26BCDB20005E3500B9A640 /* ServiceProtocol.swift */,
+				2B26BCD920005E1600B9A640 /* SimulateService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		2B26BCD02000573D00B9A640 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				2B26BCD12000574D00B9A640 /* CompletionHandlerType.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		9B62CE54D9E70C8A9EF77BE7 /* Pods */ = {
@@ -329,10 +366,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B26BCCF200056E400B9A640 /* ServiceAPI.swift in Sources */,
+				2B26BCD4200058CA00B9A640 /* NetworkError.swift in Sources */,
+				2B26BCD8200059A900B9A640 /* StatusCode.swift in Sources */,
+				2B26BCDA20005E1600B9A640 /* SimulateService.swift in Sources */,
 				2B26BCCB20004E2E00B9A640 /* InvestmentParameter.swift in Sources */,
 				2B26BCCA20004E2E00B9A640 /* Simulation.swift in Sources */,
 				2B26BCCC20004E2E00B9A640 /* SimulationParameters.swift in Sources */,
+				2B26BCD22000574D00B9A640 /* CompletionHandlerType.swift in Sources */,
+				2B26BCD62000590A00B9A640 /* Endpoints.swift in Sources */,
 				2B26BC9420003D4600B9A640 /* AppDelegate.swift in Sources */,
+				2B26BCDC20005E3500B9A640 /* ServiceProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
