@@ -19,6 +19,7 @@
 		2B26BCD4200058CA00B9A640 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B26BCD3200058CA00B9A640 /* NetworkError.swift */; };
 		2B26BCD62000590A00B9A640 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B26BCD52000590A00B9A640 /* Endpoints.swift */; };
 		2B26BCD8200059A900B9A640 /* StatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B26BCD7200059A900B9A640 /* StatusCode.swift */; };
+		2B26BCDA20005E1600B9A640 /* SimulateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B26BCD920005E1600B9A640 /* SimulateService.swift */; };
 		2B26BCDC20005E3500B9A640 /* ServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B26BCDB20005E3500B9A640 /* ServiceProtocol.swift */; };
 		71C829E12681272A52BF7126 /* Pods_Easyntest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89766FA4FAC8AFEE4EDD0ABD /* Pods_Easyntest.framework */; };
 /* End PBXBuildFile section */
@@ -50,6 +51,7 @@
 		2B26BCD3200058CA00B9A640 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		2B26BCD52000590A00B9A640 /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
 		2B26BCD7200059A900B9A640 /* StatusCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusCode.swift; sourceTree = "<group>"; };
+		2B26BCD920005E1600B9A640 /* SimulateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulateService.swift; sourceTree = "<group>"; };
 		2B26BCDB20005E3500B9A640 /* ServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProtocol.swift; sourceTree = "<group>"; };
 		6E871EE9BFADB262BA4E43D6 /* Pods-Easyntest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Easyntest.release.xcconfig"; path = "Pods/Target Support Files/Pods-Easyntest/Pods-Easyntest.release.xcconfig"; sourceTree = "<group>"; };
 		89766FA4FAC8AFEE4EDD0ABD /* Pods_Easyntest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Easyntest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -168,6 +170,7 @@
 				2B26BCCE200056E400B9A640 /* ServiceAPI.swift */,
 				2B26BCD3200058CA00B9A640 /* NetworkError.swift */,
 				2B26BCDB20005E3500B9A640 /* ServiceProtocol.swift */,
+				2B26BCD920005E1600B9A640 /* SimulateService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -366,6 +369,7 @@
 				2B26BCCF200056E400B9A640 /* ServiceAPI.swift in Sources */,
 				2B26BCD4200058CA00B9A640 /* NetworkError.swift in Sources */,
 				2B26BCD8200059A900B9A640 /* StatusCode.swift in Sources */,
+				2B26BCDA20005E1600B9A640 /* SimulateService.swift in Sources */,
 				2B26BCCB20004E2E00B9A640 /* InvestmentParameter.swift in Sources */,
 				2B26BCCA20004E2E00B9A640 /* Simulation.swift in Sources */,
 				2B26BCCC20004E2E00B9A640 /* SimulationParameters.swift in Sources */,
