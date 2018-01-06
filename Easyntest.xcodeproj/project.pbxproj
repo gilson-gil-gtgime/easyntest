@@ -11,6 +11,9 @@
 		2B26BCA920003D4600B9A640 /* EasyntestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B26BCA820003D4600B9A640 /* EasyntestTests.swift */; };
 		2B26BCB620003D8A00B9A640 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B26BCB520003D8900B9A640 /* LaunchScreen.storyboard */; };
 		2B26BCB820003D9500B9A640 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B26BCB720003D9500B9A640 /* Assets.xcassets */; };
+		2B26BCCA20004E2E00B9A640 /* Simulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B26BCC720004E2E00B9A640 /* Simulation.swift */; };
+		2B26BCCB20004E2E00B9A640 /* InvestmentParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B26BCC820004E2E00B9A640 /* InvestmentParameter.swift */; };
+		2B26BCCC20004E2E00B9A640 /* SimulationParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B26BCC920004E2E00B9A640 /* SimulationParameters.swift */; };
 		71C829E12681272A52BF7126 /* Pods_Easyntest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89766FA4FAC8AFEE4EDD0ABD /* Pods_Easyntest.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +36,9 @@
 		2B26BCAA20003D4600B9A640 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B26BCB520003D8900B9A640 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2B26BCB720003D9500B9A640 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2B26BCC720004E2E00B9A640 /* Simulation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Simulation.swift; path = Easyntest/Models/Simulation.swift; sourceTree = SOURCE_ROOT; };
+		2B26BCC820004E2E00B9A640 /* InvestmentParameter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InvestmentParameter.swift; path = Easyntest/Models/InvestmentParameter.swift; sourceTree = SOURCE_ROOT; };
+		2B26BCC920004E2E00B9A640 /* SimulationParameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SimulationParameters.swift; path = Easyntest/Models/SimulationParameters.swift; sourceTree = SOURCE_ROOT; };
 		6E871EE9BFADB262BA4E43D6 /* Pods-Easyntest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Easyntest.release.xcconfig"; path = "Pods/Target Support Files/Pods-Easyntest/Pods-Easyntest.release.xcconfig"; sourceTree = "<group>"; };
 		89766FA4FAC8AFEE4EDD0ABD /* Pods_Easyntest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Easyntest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		98F00E4C8F18F302E2702C73 /* Pods-Easyntest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Easyntest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Easyntest/Pods-Easyntest.debug.xcconfig"; sourceTree = "<group>"; };
@@ -89,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				2B26BCB320003D6400B9A640 /* Application */,
+				2B26BCC620004E1D00B9A640 /* Models */,
 				2B26BCB420003D7B00B9A640 /* Resources */,
 				2B26BCC32000486700B9A640 /* SwiftLint */,
 			);
@@ -127,6 +134,16 @@
 			children = (
 			);
 			path = SwiftLint;
+			sourceTree = "<group>";
+		};
+		2B26BCC620004E1D00B9A640 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2B26BCC820004E2E00B9A640 /* InvestmentParameter.swift */,
+				2B26BCC720004E2E00B9A640 /* Simulation.swift */,
+				2B26BCC920004E2E00B9A640 /* SimulationParameters.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		9B62CE54D9E70C8A9EF77BE7 /* Pods */ = {
@@ -312,6 +329,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B26BCCB20004E2E00B9A640 /* InvestmentParameter.swift in Sources */,
+				2B26BCCA20004E2E00B9A640 /* Simulation.swift in Sources */,
+				2B26BCCC20004E2E00B9A640 /* SimulationParameters.swift in Sources */,
 				2B26BC9420003D4600B9A640 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
