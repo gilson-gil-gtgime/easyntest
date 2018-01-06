@@ -11,6 +11,7 @@
 		2B26BCA920003D4600B9A640 /* EasyntestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B26BCA820003D4600B9A640 /* EasyntestTests.swift */; };
 		2B26BCB620003D8A00B9A640 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B26BCB520003D8900B9A640 /* LaunchScreen.storyboard */; };
 		2B26BCB820003D9500B9A640 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B26BCB720003D9500B9A640 /* Assets.xcassets */; };
+		71C829E12681272A52BF7126 /* Pods_Easyntest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89766FA4FAC8AFEE4EDD0ABD /* Pods_Easyntest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +33,9 @@
 		2B26BCAA20003D4600B9A640 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B26BCB520003D8900B9A640 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2B26BCB720003D9500B9A640 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6E871EE9BFADB262BA4E43D6 /* Pods-Easyntest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Easyntest.release.xcconfig"; path = "Pods/Target Support Files/Pods-Easyntest/Pods-Easyntest.release.xcconfig"; sourceTree = "<group>"; };
+		89766FA4FAC8AFEE4EDD0ABD /* Pods_Easyntest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Easyntest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		98F00E4C8F18F302E2702C73 /* Pods-Easyntest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Easyntest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Easyntest/Pods-Easyntest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71C829E12681272A52BF7126 /* Pods_Easyntest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,12 +57,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04CD21B732E4DEE4AF74D69E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				89766FA4FAC8AFEE4EDD0ABD /* Pods_Easyntest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2B26BC8720003D4600B9A640 = {
 			isa = PBXGroup;
 			children = (
 				2B26BC9220003D4600B9A640 /* Easyntest */,
 				2B26BCA720003D4600B9A640 /* EasyntestTests */,
 				2B26BC9120003D4600B9A640 /* Products */,
+				9B62CE54D9E70C8A9EF77BE7 /* Pods */,
+				04CD21B732E4DEE4AF74D69E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,6 +90,7 @@
 			children = (
 				2B26BCB320003D6400B9A640 /* Application */,
 				2B26BCB420003D7B00B9A640 /* Resources */,
+				2B26BCC32000486700B9A640 /* SwiftLint */,
 			);
 			path = Easyntest;
 			sourceTree = "<group>";
@@ -106,6 +122,22 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		2B26BCC32000486700B9A640 /* SwiftLint */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SwiftLint;
+			sourceTree = "<group>";
+		};
+		9B62CE54D9E70C8A9EF77BE7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				98F00E4C8F18F302E2702C73 /* Pods-Easyntest.debug.xcconfig */,
+				6E871EE9BFADB262BA4E43D6 /* Pods-Easyntest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -113,9 +145,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2B26BCAD20003D4600B9A640 /* Build configuration list for PBXNativeTarget "Easyntest" */;
 			buildPhases = (
+				006939DD7DA8AEDB34E91DED /* [CP] Check Pods Manifest.lock */,
 				2B26BC8C20003D4600B9A640 /* Sources */,
 				2B26BC8D20003D4600B9A640 /* Frameworks */,
 				2B26BC8E20003D4600B9A640 /* Resources */,
+				EAA115C0B0F6D74543267D01 /* [CP] Embed Pods Frameworks */,
+				87F81D261EEC9729B9A68A35 /* [CP] Copy Pods Resources */,
+				2B26BCC22000422B00B9A640 /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -202,6 +238,74 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		006939DD7DA8AEDB34E91DED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Easyntest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2B26BCC22000422B00B9A640 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\" --config \"${SRCROOT}/Easyntest/SwiftLint/.swiftlint.yml\"";
+		};
+		87F81D261EEC9729B9A68A35 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Easyntest/Pods-Easyntest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EAA115C0B0F6D74543267D01 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Easyntest/Pods-Easyntest-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Cartography/Cartography.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cartography.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Easyntest/Pods-Easyntest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2B26BC8C20003D4600B9A640 /* Sources */ = {
@@ -340,6 +444,7 @@
 		};
 		2B26BCAE20003D4600B9A640 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98F00E4C8F18F302E2702C73 /* Pods-Easyntest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -355,6 +460,7 @@
 		};
 		2B26BCAF20003D4600B9A640 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E871EE9BFADB262BA4E43D6 /* Pods-Easyntest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

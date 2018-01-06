@@ -3,7 +3,6 @@
 //  Easyntest
 //
 //  Created by Gilson Gil on 05/01/18.
-//  Copyright © 2018 Gilson Gil. All rights reserved.
 //
 
 import UIKit
