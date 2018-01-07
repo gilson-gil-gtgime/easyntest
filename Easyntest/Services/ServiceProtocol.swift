@@ -24,12 +24,12 @@ protocol ServiceProtocol {
   var parameters: [String: Any]? { get }
 
   @discardableResult
-  func run<T>(returnType: T.Type, completion: @escaping CompletionHandlerType<T?>) -> URLSessionTask
+  func run<T>(returnType: T.Type, completion: @escaping CompletionHandlerType<T>) -> URLSessionTask
 }
 
 extension ServiceProtocol {
   @discardableResult
-  func run<T>(returnType: T.Type, completion: @escaping CompletionHandlerType<T?>) -> URLSessionTask {
+  func run<T>(returnType: T.Type, completion: @escaping CompletionHandlerType<T>) -> URLSessionTask {
     var url = Endpoints.baseURL.appendingPathComponent(path)
 
     if let parameters = parameters {

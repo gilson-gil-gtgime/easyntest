@@ -24,4 +24,8 @@ struct SimulateService: ServiceProtocol {
     }
     return json
   }
+
+  func run(completion: @escaping (() throws -> Simulation) -> Void) -> URLSessionTask {
+    return self.run(returnType: Simulation.self, completion: completion)
+  }
 }

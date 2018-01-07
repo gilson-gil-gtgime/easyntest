@@ -1,0 +1,16 @@
+/* 
+  Localizable.strings
+  Easyntest
+
+  Created by Gilson Gil on 06/01/18.
+*/
+
+"simulate.label.amount" = "Quanto você gostaria de aplicar? *";
+"simulate.label.maturity" = "Qual a data de vencimento do investimento? *";
+"simulate.label.rate" = "Qual o percentual do CDI do investimento? *";
+
+"simulate.placeholder.amount" = "R$";
+"simulate.placeholder.maturity" = "dia/mês/ano";
+"simulate.placeholder.rate" = "100%";
+
+"simulate.button" = "Simular";
