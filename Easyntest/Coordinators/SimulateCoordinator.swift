@@ -21,11 +21,13 @@ final class SimulateCoordinator: NSObject, Coordinator {
   }
 
   func start() {
-    let viewController = SimulateViewController(coordinator: self)
-    if navigationController.viewControllers.isEmpty {
-      navigationController.viewControllers = [viewController]
-    } else {
-      navigationController.pushViewController(navigationController, animated: true)
+    DispatchQueue.main.async {
+      let viewController = SimulateViewController(coordinator: self)
+      if self.navigationController.viewControllers.isEmpty {
+        self.navigationController.viewControllers = [viewController]
+      } else {
+        self.navigationController.pushViewController(viewController, animated: true)
+      }
     }
   }
 }

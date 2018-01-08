@@ -37,6 +37,17 @@
 		2B26BD07200263B700B9A640 /* SimulateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B26BD06200263B700B9A640 /* SimulateViewModel.swift */; };
 		2B26BD0920026D2300B9A640 /* Business.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B26BD0820026D2300B9A640 /* Business.swift */; };
 		2B26BD0B20026F7400B9A640 /* DateFormatter+Easynvest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B26BD0A20026F7400B9A640 /* DateFormatter+Easynvest.swift */; };
+		2B26BD0D2002D23700B9A640 /* SimulationResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B26BD0C2002D23700B9A640 /* SimulationResultViewController.swift */; };
+		2B26BD0F2002D67500B9A640 /* SimulationSummaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B26BD0E2002D67500B9A640 /* SimulationSummaryCell.swift */; };
+		2B26BD112002D89600B9A640 /* Updatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B26BD102002D89600B9A640 /* Updatable.swift */; };
+		2B26BD132002D90900B9A640 /* SimulationResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B26BD122002D90900B9A640 /* SimulationResultViewModel.swift */; };
+		2B26BD152002D91400B9A640 /* SimulationSummaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B26BD142002D91400B9A640 /* SimulationSummaryViewModel.swift */; };
+		2B26BD172002D92200B9A640 /* SimulationDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B26BD162002D92200B9A640 /* SimulationDetailViewModel.swift */; };
+		2B26BD192002D9E700B9A640 /* SimulationDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B26BD182002D9E700B9A640 /* SimulationDetailCell.swift */; };
+		2B26BD1B2002DC3D00B9A640 /* SimulationButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B26BD1A2002DC3D00B9A640 /* SimulationButtonCell.swift */; };
+		2B26BD1D2002E03E00B9A640 /* SimulationResultCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B26BD1C2002E03E00B9A640 /* SimulationResultCoordinator.swift */; };
+		2B26BD1F2002E53F00B9A640 /* NumberFormatter+Percentage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B26BD1E2002E53F00B9A640 /* NumberFormatter+Percentage.swift */; };
+		2B26BD212002E82E00B9A640 /* Date+days.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B26BD202002E82E00B9A640 /* Date+days.swift */; };
 		71C829E12681272A52BF7126 /* Pods_Easyntest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89766FA4FAC8AFEE4EDD0ABD /* Pods_Easyntest.framework */; };
 /* End PBXBuildFile section */
 
@@ -85,6 +96,17 @@
 		2B26BD06200263B700B9A640 /* SimulateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulateViewModel.swift; sourceTree = "<group>"; };
 		2B26BD0820026D2300B9A640 /* Business.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Business.swift; sourceTree = "<group>"; };
 		2B26BD0A20026F7400B9A640 /* DateFormatter+Easynvest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Easynvest.swift"; sourceTree = "<group>"; };
+		2B26BD0C2002D23700B9A640 /* SimulationResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationResultViewController.swift; sourceTree = "<group>"; };
+		2B26BD0E2002D67500B9A640 /* SimulationSummaryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationSummaryCell.swift; sourceTree = "<group>"; };
+		2B26BD102002D89600B9A640 /* Updatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Updatable.swift; sourceTree = "<group>"; };
+		2B26BD122002D90900B9A640 /* SimulationResultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationResultViewModel.swift; sourceTree = "<group>"; };
+		2B26BD142002D91400B9A640 /* SimulationSummaryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationSummaryViewModel.swift; sourceTree = "<group>"; };
+		2B26BD162002D92200B9A640 /* SimulationDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationDetailViewModel.swift; sourceTree = "<group>"; };
+		2B26BD182002D9E700B9A640 /* SimulationDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationDetailCell.swift; sourceTree = "<group>"; };
+		2B26BD1A2002DC3D00B9A640 /* SimulationButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationButtonCell.swift; sourceTree = "<group>"; };
+		2B26BD1C2002E03E00B9A640 /* SimulationResultCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationResultCoordinator.swift; sourceTree = "<group>"; };
+		2B26BD1E2002E53F00B9A640 /* NumberFormatter+Percentage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NumberFormatter+Percentage.swift"; sourceTree = "<group>"; };
+		2B26BD202002E82E00B9A640 /* Date+days.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+days.swift"; sourceTree = "<group>"; };
 		6E871EE9BFADB262BA4E43D6 /* Pods-Easyntest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Easyntest.release.xcconfig"; path = "Pods/Target Support Files/Pods-Easyntest/Pods-Easyntest.release.xcconfig"; sourceTree = "<group>"; };
 		89766FA4FAC8AFEE4EDD0ABD /* Pods_Easyntest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Easyntest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		98F00E4C8F18F302E2702C73 /* Pods-Easyntest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Easyntest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Easyntest/Pods-Easyntest.debug.xcconfig"; sourceTree = "<group>"; };
@@ -222,7 +244,10 @@
 				2B26BCD12000574D00B9A640 /* CompletionHandlerType.swift */,
 				2B26BCF62001760100B9A640 /* KeyboardHandler.swift */,
 				2B26BD03200262B800B9A640 /* NumberFormatter+Currency.swift */,
+				2B26BD1E2002E53F00B9A640 /* NumberFormatter+Percentage.swift */,
 				2B26BD0A20026F7400B9A640 /* DateFormatter+Easynvest.swift */,
+				2B26BD102002D89600B9A640 /* Updatable.swift */,
+				2B26BD202002E82E00B9A640 /* Date+days.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -231,6 +256,7 @@
 			isa = PBXGroup;
 			children = (
 				2B26BCDE20006D7700B9A640 /* SimulateViewController.swift */,
+				2B26BD0C2002D23700B9A640 /* SimulationResultViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -242,6 +268,7 @@
 				2B26BCE320006DD900B9A640 /* AppCoordinator.swift */,
 				2B26BCE520006E2600B9A640 /* SimulationCoordinator.swift */,
 				2B26BCE720006F9200B9A640 /* SimulateCoordinator.swift */,
+				2B26BD1C2002E03E00B9A640 /* SimulationResultCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -251,6 +278,9 @@
 			children = (
 				2B26BCF92001797100B9A640 /* TextField.swift */,
 				2B26BCFB20017B9C00B9A640 /* RoundedButton.swift */,
+				2B26BD0E2002D67500B9A640 /* SimulationSummaryCell.swift */,
+				2B26BD182002D9E700B9A640 /* SimulationDetailCell.swift */,
+				2B26BD1A2002DC3D00B9A640 /* SimulationButtonCell.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -259,6 +289,9 @@
 			isa = PBXGroup;
 			children = (
 				2B26BD06200263B700B9A640 /* SimulateViewModel.swift */,
+				2B26BD122002D90900B9A640 /* SimulationResultViewModel.swift */,
+				2B26BD142002D91400B9A640 /* SimulationSummaryViewModel.swift */,
+				2B26BD162002D92200B9A640 /* SimulationDetailViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -449,6 +482,7 @@
 			files = (
 				2B26BCCF200056E400B9A640 /* ServiceAPI.swift in Sources */,
 				2B26BCF52001650C00B9A640 /* CGFloat+Easyntest.swift in Sources */,
+				2B26BD1F2002E53F00B9A640 /* NumberFormatter+Percentage.swift in Sources */,
 				2B26BD07200263B700B9A640 /* SimulateViewModel.swift in Sources */,
 				2B26BD0920026D2300B9A640 /* Business.swift in Sources */,
 				2B26BCD4200058CA00B9A640 /* NetworkError.swift in Sources */,
@@ -456,22 +490,32 @@
 				2B26BCEA2000751C00B9A640 /* UIColor+Easyntest.swift in Sources */,
 				2B26BCE620006E2600B9A640 /* SimulationCoordinator.swift in Sources */,
 				2B26BCE220006DB700B9A640 /* Coordinator.swift in Sources */,
+				2B26BD0D2002D23700B9A640 /* SimulationResultViewController.swift in Sources */,
 				2B26BCF32000769E00B9A640 /* String+Easyntest.swift in Sources */,
 				2B26BCDF20006D7700B9A640 /* SimulateViewController.swift in Sources */,
 				2B26BD04200262B800B9A640 /* NumberFormatter+Currency.swift in Sources */,
 				2B26BCD8200059A900B9A640 /* StatusCode.swift in Sources */,
+				2B26BD152002D91400B9A640 /* SimulationSummaryViewModel.swift in Sources */,
 				2B26BCDA20005E1600B9A640 /* SimulateService.swift in Sources */,
 				2B26BCE420006DD900B9A640 /* AppCoordinator.swift in Sources */,
+				2B26BD112002D89600B9A640 /* Updatable.swift in Sources */,
 				2B26BCCB20004E2E00B9A640 /* InvestmentParameter.swift in Sources */,
 				2B26BCCA20004E2E00B9A640 /* Simulation.swift in Sources */,
 				2B26BCCC20004E2E00B9A640 /* SimulationParameters.swift in Sources */,
 				2B26BCD22000574D00B9A640 /* CompletionHandlerType.swift in Sources */,
+				2B26BD1B2002DC3D00B9A640 /* SimulationButtonCell.swift in Sources */,
 				2B26BD0B20026F7400B9A640 /* DateFormatter+Easynvest.swift in Sources */,
 				2B26BCF72001760100B9A640 /* KeyboardHandler.swift in Sources */,
 				2B26BCFC20017B9C00B9A640 /* RoundedButton.swift in Sources */,
 				2B26BCE820006F9200B9A640 /* SimulateCoordinator.swift in Sources */,
+				2B26BD132002D90900B9A640 /* SimulationResultViewModel.swift in Sources */,
+				2B26BD212002E82E00B9A640 /* Date+days.swift in Sources */,
+				2B26BD1D2002E03E00B9A640 /* SimulationResultCoordinator.swift in Sources */,
 				2B26BCD62000590A00B9A640 /* Endpoints.swift in Sources */,
+				2B26BD192002D9E700B9A640 /* SimulationDetailCell.swift in Sources */,
+				2B26BD0F2002D67500B9A640 /* SimulationSummaryCell.swift in Sources */,
 				2B26BC9420003D4600B9A640 /* AppDelegate.swift in Sources */,
+				2B26BD172002D92200B9A640 /* SimulationDetailViewModel.swift in Sources */,
 				2B26BCDC20005E3500B9A640 /* ServiceProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

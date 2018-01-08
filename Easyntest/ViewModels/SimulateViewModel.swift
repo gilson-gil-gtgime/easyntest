@@ -161,4 +161,8 @@ struct SimulateViewModel {
     }
     print(task)
   }
+
+  func reset() -> SimulateViewModel {
+    return SimulateViewModel(coordinator: coordinator)
+  }
 }

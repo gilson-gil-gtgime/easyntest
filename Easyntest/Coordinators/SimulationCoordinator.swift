@@ -31,11 +31,21 @@ final class SimulationCoordinator: NSObject, Coordinator {
   }
 
   func presentSimulation(_ simulation: Simulation) {
+    let coordinator = SimulationResultCoordinator(navigationController: navigationController,
+                                                  simulation: simulation)
+    coordinator.delegate = self
+    coordinator.start()
   }
 }
 
 extension SimulationCoordinator: SimulateCoordinatorDelegate {
   func didSimutale(simulation: Simulation) {
     presentSimulation(simulation)
+  }
+}
+
+extension SimulationCoordinator: SimulationResultCoordinatorDelegate {
+  func didTapReset(at coordinator: SimulationResultCoordinator) {
+    navigationController.popViewController(animated: true)
   }
 }

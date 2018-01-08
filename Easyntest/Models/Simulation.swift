@@ -20,4 +20,12 @@ struct Simulation: Codable {
   let taxesRate: Double
   let rateProfit: Double
   let annualNetRateProfit: Double
+
+  var investedAmount: Double {
+    return investmentParameter.investedAmount
+  }
+
+  var rate: Double {
+    return investmentParameter.rate
+  }
 }

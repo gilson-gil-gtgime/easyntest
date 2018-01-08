@@ -15,4 +15,8 @@ extension CGFloat {
   static var defaultHorizontalMargin: CGFloat {
     return 20
   }
+
+  static var defaultButtonHeight: CGFloat {
+    return 50
+  }
 }

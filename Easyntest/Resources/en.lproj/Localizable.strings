@@ -14,3 +14,18 @@
 "simulate.placeholder.rate" = "100%";
 
 "simulate.button" = "Simular";
+
+"simulation.label.result" = "Resultado da simulação";
+"simulation.label.totalProfit" = "Rendimento total de";
+"simulation.label.invested" = "Valor aplicado inicialmente";
+"simulation.label.gross" = "Valor bruto do investimento";
+"simulation.label.profit" = "Valor do rendimento";
+"simulation.label.tax" = "IR sobre o investimento";
+"simulation.label.net" = "Valor líquido do investimento";
+"simulation.label.maturity" = "Data de resgate";
+"simulation.label.days" = "Dias corridos";
+"simulation.label.monthlyRate" = "Rendimento mensal";
+"simulation.label.rate" = "Percentual do CDI do investimento";
+"simulation.label.annualRate" = "Rentabilidade anual";
+"simulation.label.periodRate" = "Rentabilidade do período";
+"simulation.button" = "Simular novamente";

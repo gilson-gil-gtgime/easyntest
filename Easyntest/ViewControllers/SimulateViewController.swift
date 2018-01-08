@@ -15,7 +15,7 @@ extension SimulateViewController {
   }
 
   static var buttonHeight: CGFloat {
-    return 50
+    return .defaultButtonHeight
   }
 }
 
@@ -211,6 +211,12 @@ final class SimulateViewController: UIViewController {
     scrollViewContentView.addGestureRecognizer(tap)
   }
 
+  override func viewDidDisappear(_ animated: Bool) {
+    super.viewDidDisappear(animated)
+    viewModel = viewModel.reset()
+    reset()
+  }
+
   deinit {
     stopObservingKeyboardUp()
     stopObservingKeyboardDown()
@@ -269,6 +275,15 @@ extension SimulateViewController: UITextFieldDelegate {
       break
     }
     return false
+  }
+}
+
+// MARK: - Private
+private extension SimulateViewController {
+  func reset() {
+    amountTextField.text = nil
+    maturityTextField.text = nil
+    rateTextField.text = nil
   }
 }
 
