@@ -151,7 +151,7 @@ struct SimulateViewModel {
     let maturityString = DateFormatter.api.string(from: maturity)
     let parameters = SimulationParameters(investedAmount: amount, rate: rate, maturityDate: maturityString)
     let service = SimulateService(simulationParameters: parameters)
-    let task = service.run { callback in
+    let task = service.request { callback in
       do {
         let simulation = try callback()
         self.coordinator.delegate?.didSimutale(simulation: simulation)
