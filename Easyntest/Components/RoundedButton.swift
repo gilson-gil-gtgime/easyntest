@@ -62,3 +62,6 @@ private extension RoundedButton {
     }
   }
 }
+
+// MARK: - Loading Protocol
+extension RoundedButton: LoadingButton {}
