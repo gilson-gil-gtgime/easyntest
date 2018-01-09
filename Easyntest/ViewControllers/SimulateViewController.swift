@@ -223,6 +223,7 @@ final class SimulateViewController: UIViewController {
     scrollViewContentView.gestureRecognizers?.forEach {
       scrollViewContentView.removeGestureRecognizer($0)
     }
+    viewModel.cancelCurrentTask()
   }
 }
 
@@ -237,9 +238,10 @@ extension SimulateViewController {
   @objc
   func simulateTapped() {
     simulateButton.startAnimating()
-    viewModel.submitTapped {
+    viewModel = viewModel.submitTapped { newViewModel in
       DispatchQueue.main.async {
         self.simulateButton.stopAnimating()
+        self.viewModel = newViewModel
       }
     }
   }

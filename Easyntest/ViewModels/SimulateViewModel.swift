@@ -14,6 +14,7 @@ struct SimulateViewModel {
   let rate: Int?
   let currencyFormatter: NumberFormatter
   let dateFormatter: DateFormatter
+  let currentTask: URLSessionTask?
 
   // MARK: - View Controller Values
   var formattedAmount: String? {
@@ -48,13 +49,15 @@ struct SimulateViewModel {
        maturity: Date? = nil,
        rate: Int? = nil,
        currencyFormatter: NumberFormatter = NumberFormatter.currencyFormatter,
-       dateFormatter: DateFormatter = DateFormatter.formatter) {
+       dateFormatter: DateFormatter = DateFormatter.formatter,
+       currentTask: URLSessionTask? = nil) {
     self.coordinator = coordinator
     self.amount = amount
     self.maturity = maturity
     self.rate = rate
     self.currencyFormatter = currencyFormatter
     self.dateFormatter = dateFormatter
+    self.currentTask = currentTask
   }
 
   // MARK: - Amount
@@ -72,7 +75,8 @@ struct SimulateViewModel {
                                       maturity: maturity,
                                       rate: rate,
                                       currencyFormatter: currencyFormatter,
-                                      dateFormatter: dateFormatter)
+                                      dateFormatter: dateFormatter,
+                                      currentTask: currentTask)
     return viewModel
   }
 
@@ -90,7 +94,8 @@ struct SimulateViewModel {
                                       maturity: maturity,
                                       rate: rate,
                                       currencyFormatter: currencyFormatter,
-                                      dateFormatter: dateFormatter)
+                                      dateFormatter: dateFormatter,
+                                      currentTask: currentTask)
     return viewModel
   }
 
@@ -104,7 +109,8 @@ struct SimulateViewModel {
                              maturity: date,
                              rate: rate,
                              currencyFormatter: currencyFormatter,
-                             dateFormatter: dateFormatter)
+                             dateFormatter: dateFormatter,
+                             currentTask: currentTask)
   }
 
   // MARK: - Rate
@@ -122,7 +128,8 @@ struct SimulateViewModel {
                                       maturity: maturity,
                                       rate: newRate,
                                       currencyFormatter: currencyFormatter,
-                                      dateFormatter: dateFormatter)
+                                      dateFormatter: dateFormatter,
+                                      currentTask: currentTask)
     return viewModel
   }
 
@@ -139,14 +146,15 @@ struct SimulateViewModel {
                                       maturity: maturity,
                                       rate: newRate,
                                       currencyFormatter: currencyFormatter,
-                                      dateFormatter: dateFormatter)
+                                      dateFormatter: dateFormatter,
+                                      currentTask: currentTask)
     return viewModel
   }
 
   // MARK: - Submit
-  func submitTapped(completion: @escaping () -> Void) {
+  func submitTapped(completion: @escaping (SimulateViewModel) -> Void) -> SimulateViewModel {
     guard let amount = amount, let maturity = maturity, let rate = rate else {
-      return
+      return self
     }
     let maturityString = DateFormatter.api.string(from: maturity)
     let parameters = SimulationParameters(investedAmount: amount, rate: rate, maturityDate: maturityString)
@@ -158,12 +166,41 @@ struct SimulateViewModel {
       } catch {
         print(error)
       }
-      completion()
+      completion(self.reset())
     }
-    print(task)
+    return newCurrentTask(task)
   }
 
   func reset() -> SimulateViewModel {
+    if let currentTask = currentTask, currentTask.state == .running {
+      currentTask.cancel()
+    }
     return SimulateViewModel(coordinator: coordinator)
+  }
+
+  // MARK: - URLSession Task
+  func newCurrentTask(_ task: URLSessionTask?) -> SimulateViewModel {
+    let viewModel = SimulateViewModel(coordinator: coordinator,
+                                      amount: amount,
+                                      maturity: maturity,
+                                      rate: rate,
+                                      currencyFormatter: currencyFormatter,
+                                      dateFormatter: dateFormatter,
+                                      currentTask: task)
+    return viewModel
+  }
+
+  @discardableResult
+  func cancelCurrentTask() -> SimulateViewModel {
+    if let currentTask = currentTask, currentTask.state == .running {
+      currentTask.cancel()
+    }
+    let viewModel = SimulateViewModel(coordinator: coordinator,
+                                      amount: amount,
+                                      maturity: maturity,
+                                      rate: rate,
+                                      currencyFormatter: currencyFormatter,
+                                      dateFormatter: dateFormatter)
+    return viewModel
   }
 }
