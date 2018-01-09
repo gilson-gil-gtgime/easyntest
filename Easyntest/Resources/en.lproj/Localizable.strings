@@ -5,6 +5,9 @@
   Created by Gilson Gil on 06/01/18.
 */
 
+"alert.error.title" = "Error";
+"alert.error.ok" = "Ok";
+
 "simulate.label.amount" = "Quanto você gostaria de aplicar? *";
 "simulate.label.maturity" = "Qual a data de vencimento do investimento? *";
 "simulate.label.rate" = "Qual o percentual do CDI do investimento? *";

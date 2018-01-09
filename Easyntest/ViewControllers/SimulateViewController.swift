@@ -116,7 +116,9 @@ final class SimulateViewController: UIViewController {
 
   fileprivate var viewModel: SimulateViewModel {
     didSet {
-      simulateButton.isEnabled = viewModel.isValid
+      DispatchQueue.main.async {
+        self.simulateButton.isEnabled = self.viewModel.isValid
+      }
     }
   }
 
@@ -228,20 +230,26 @@ final class SimulateViewController: UIViewController {
 }
 
 // MARK: - Actions
+@objc
 extension SimulateViewController {
-  @objc
   func datePickerChanged() {
     viewModel = viewModel.newMaturity(date: datePicker.date)
     maturityTextField.text = viewModel.formattedMaturity
   }
 
-  @objc
   func simulateTapped() {
     simulateButton.startAnimating()
-    viewModel = viewModel.submitTapped { newViewModel in
+    viewModel = viewModel.submitTapped { callback in
       DispatchQueue.main.async {
         self.simulateButton.stopAnimating()
+      }
+      do {
+        let newViewModel = try callback()
         self.viewModel = newViewModel
+      } catch let error as NetworkError {
+        self.present(error: error.localizedDescription)
+      } catch {
+        self.present(error: error.localizedDescription)
       }
     }
   }
@@ -297,13 +305,17 @@ private extension SimulateViewController {
 // MARK: - Keyboard Handler Protocol
 extension SimulateViewController: KeyboardHandler {
   func observeKeyboardUp() {
-    NotificationCenter.default.addObserver(self, selector: #selector(handleKeyboardUp(notification:)),
-                                           name: .UIKeyboardWillShow, object: nil)
+    NotificationCenter.default.addObserver(self,
+                                           selector: #selector(handleKeyboardUp(notification:)),
+                                           name: .UIKeyboardWillShow,
+                                           object: nil)
   }
 
   func observeKeyboardDown() {
-    NotificationCenter.default.addObserver(self, selector: #selector(handleKeyboardDown(notification:)),
-                                           name: .UIKeyboardWillHide, object: nil)
+    NotificationCenter.default.addObserver(self,
+                                           selector: #selector(handleKeyboardDown(notification:)),
+                                           name: .UIKeyboardWillHide,
+                                           object: nil)
   }
 
   @objc

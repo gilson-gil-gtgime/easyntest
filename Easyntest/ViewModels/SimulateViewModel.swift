@@ -152,7 +152,7 @@ struct SimulateViewModel {
   }
 
   // MARK: - Submit
-  func submitTapped(completion: @escaping (SimulateViewModel) -> Void) -> SimulateViewModel {
+  func submitTapped(completion: @escaping CompletionHandlerType<SimulateViewModel>) -> SimulateViewModel {
     guard let amount = amount, let maturity = maturity, let rate = rate else {
       return self
     }
@@ -163,10 +163,10 @@ struct SimulateViewModel {
       do {
         let simulation = try callback()
         self.coordinator.delegate?.didSimutale(simulation: simulation)
+        completion { self.reset() }
       } catch {
-        print(error)
+        completion { throw error }
       }
-      completion(self.reset())
     }
     return newCurrentTask(task)
   }

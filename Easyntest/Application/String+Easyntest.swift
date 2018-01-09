@@ -8,6 +8,16 @@
 import Foundation
 
 extension String {
+  struct Alert {
+    static var title: String {
+      return NSLocalizedString("alert.error.title", comment: "")
+    }
+
+    static var okButton: String {
+      return NSLocalizedString("alert.error.ok", comment: "")
+    }
+  }
+
   struct Simulate {
     static var amountLabel: String {
       return NSLocalizedString("simulate.label.amount", comment: "")
