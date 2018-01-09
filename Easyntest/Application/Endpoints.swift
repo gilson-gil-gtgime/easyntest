@@ -9,7 +9,7 @@ import Foundation
 
 struct Endpoints {
   static var baseURLString: String {
-    return "https://easynvestsimulatorcalcapi.azurewebsites.net/"
+    return "https://api-simulator-calc.easynvest.com.br/"
   }
 
   static var baseURL: URL {

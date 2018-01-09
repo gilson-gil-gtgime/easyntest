@@ -24,4 +24,23 @@ struct SimulateService: ServiceProtocol {
     }
     return json
   }
+
+  var decoder: JSONDecoder {
+    let decoder = JSONDecoder()
+    let dateFormatter = DateFormatter()
+    dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss"
+    decoder.dateDecodingStrategy = .formatted(dateFormatter)
+    return decoder
+  }
+
+  func request(completion: @escaping CompletionHandlerType<Simulation>) -> URLSessionTask {
+    return run(completion: { (callback: () throws -> Simulation) in
+      do {
+        let simulation = try callback()
+        completion { simulation }
+      } catch {
+        completion { throw error }
+      }
+    })
+  }
 }
