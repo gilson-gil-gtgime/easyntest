@@ -144,7 +144,7 @@ struct SimulateViewModel {
   }
 
   // MARK: - Submit
-  func submitTapped() {
+  func submitTapped(completion: @escaping () -> Void) {
     guard let amount = amount, let maturity = maturity, let rate = rate else {
       return
     }
@@ -158,6 +158,7 @@ struct SimulateViewModel {
       } catch {
         print(error)
       }
+      completion()
     }
     print(task)
   }

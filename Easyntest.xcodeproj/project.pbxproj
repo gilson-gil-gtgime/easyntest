@@ -48,6 +48,7 @@
 		2B26BD1D2002E03E00B9A640 /* SimulationResultCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B26BD1C2002E03E00B9A640 /* SimulationResultCoordinator.swift */; };
 		2B26BD1F2002E53F00B9A640 /* NumberFormatter+Percentage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B26BD1E2002E53F00B9A640 /* NumberFormatter+Percentage.swift */; };
 		2B26BD212002E82E00B9A640 /* Date+days.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B26BD202002E82E00B9A640 /* Date+days.swift */; };
+		2B26BD232004507F00B9A640 /* LoadingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B26BD222004507F00B9A640 /* LoadingButton.swift */; };
 		71C829E12681272A52BF7126 /* Pods_Easyntest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89766FA4FAC8AFEE4EDD0ABD /* Pods_Easyntest.framework */; };
 /* End PBXBuildFile section */
 
@@ -107,6 +108,7 @@
 		2B26BD1C2002E03E00B9A640 /* SimulationResultCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationResultCoordinator.swift; sourceTree = "<group>"; };
 		2B26BD1E2002E53F00B9A640 /* NumberFormatter+Percentage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NumberFormatter+Percentage.swift"; sourceTree = "<group>"; };
 		2B26BD202002E82E00B9A640 /* Date+days.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+days.swift"; sourceTree = "<group>"; };
+		2B26BD222004507F00B9A640 /* LoadingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingButton.swift; sourceTree = "<group>"; };
 		6E871EE9BFADB262BA4E43D6 /* Pods-Easyntest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Easyntest.release.xcconfig"; path = "Pods/Target Support Files/Pods-Easyntest/Pods-Easyntest.release.xcconfig"; sourceTree = "<group>"; };
 		89766FA4FAC8AFEE4EDD0ABD /* Pods_Easyntest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Easyntest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		98F00E4C8F18F302E2702C73 /* Pods-Easyntest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Easyntest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Easyntest/Pods-Easyntest.debug.xcconfig"; sourceTree = "<group>"; };
@@ -281,6 +283,7 @@
 				2B26BD0E2002D67500B9A640 /* SimulationSummaryCell.swift */,
 				2B26BD182002D9E700B9A640 /* SimulationDetailCell.swift */,
 				2B26BD1A2002DC3D00B9A640 /* SimulationButtonCell.swift */,
+				2B26BD222004507F00B9A640 /* LoadingButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -482,6 +485,7 @@
 			files = (
 				2B26BCCF200056E400B9A640 /* ServiceAPI.swift in Sources */,
 				2B26BCF52001650C00B9A640 /* CGFloat+Easyntest.swift in Sources */,
+				2B26BD232004507F00B9A640 /* LoadingButton.swift in Sources */,
 				2B26BD1F2002E53F00B9A640 /* NumberFormatter+Percentage.swift in Sources */,
 				2B26BD07200263B700B9A640 /* SimulateViewModel.swift in Sources */,
 				2B26BD0920026D2300B9A640 /* Business.swift in Sources */,

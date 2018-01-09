@@ -236,7 +236,12 @@ extension SimulateViewController {
 
   @objc
   func simulateTapped() {
-    viewModel.submitTapped()
+    simulateButton.startAnimating()
+    viewModel.submitTapped {
+      DispatchQueue.main.async {
+        self.simulateButton.stopAnimating()
+      }
+    }
   }
 }
 
