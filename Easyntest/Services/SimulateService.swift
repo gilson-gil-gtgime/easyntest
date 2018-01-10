@@ -34,13 +34,6 @@ struct SimulateService: ServiceProtocol {
   }
 
   func request(completion: @escaping CompletionHandlerType<Simulation>) -> URLSessionTask {
-    return run(completion: { (callback: () throws -> Simulation) in
-      do {
-        let simulation = try callback()
-        completion { simulation }
-      } catch {
-        completion { throw error }
-      }
-    })
+    return run(completion: completion)
   }
 }

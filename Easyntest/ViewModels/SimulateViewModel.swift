@@ -180,6 +180,7 @@ struct SimulateViewModel {
 
   // MARK: - URLSession Task
   func newCurrentTask(_ task: URLSessionTask?) -> SimulateViewModel {
+    cancelCurrentTask()
     let viewModel = SimulateViewModel(coordinator: coordinator,
                                       amount: amount,
                                       maturity: maturity,
